@@ -6,7 +6,7 @@ import { useState } from 'react';//useState es una funcion que devuelve un arreg
 // se crea rapido escribiendo rafc
 export const CounterApp2 = ( { valorInicial } ) => {
 
-    console.log( 'render' );
+    // console.log( 'render' );
     //API.. FETCH...
 
     const [ counter, setCounter ] = useState( valorInicial ); // 0 es el valor inicial
@@ -40,6 +40,7 @@ export const CounterApp2 = ( { valorInicial } ) => {
             <button onClick={ /* ( event ) => */ aumentar/* ( event ) */ }> +1 </button>
             <button onClick={ reducir}> -1 </button>
             <button onClick={ resetear }> resetear </button>
+            {/* <button aria-label="btn-reset" onClick={ resetear }> resetear </button> */}
         </>
     )
 }
